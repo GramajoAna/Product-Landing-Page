@@ -1,0 +1,173 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    background-color: #EDEDED;
+    color: rgba(0, 0, 0, 0.9);
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+#header {
+    height: auto;
+    width: 100%;
+    background-color: #EDEDED;
+    display: grid;
+    grid-template-columns: 20% 30%;
+    justify-content: space-between;
+    position: fixed;
+}
+
+#nav-bar > a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#header-img,
+#nav-bar {
+    margin: auto;
+}
+
+
+#info {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-gap: .25em;
+}
+
+.icons {
+    margin: auto;
+    text-align: justify;
+}
+
+.text {
+    text-align: left;
+}
+
+#form {
+    padding-top: 60px;
+    display: block;
+    text-align: center;
+}
+
+#header-2 {
+    grid-column: 3 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    padding-left: 60px;
+}
+
+
+.box-1, .box-2, .box-3 {
+    width: 250px;
+    height: 300px;
+    border: 1.5px solid rgba(0, 0, 0, 0.9);
+    background-color: #EDEDED;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+  }
+
+
+h1 {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: black;
+}
+
+.fa-fire,
+.fa-truck,
+.fa-battery-full {
+    display: flex;
+    font-size: 60px;
+    color: orange;
+}
+
+.nav-link {
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none !important;
+}
+
+ul > li {
+    padding-bottom:10px ;
+    text-align: center;
+    padding-right: 35px;
+    list-style: none;
+}
+
+.header4 {
+    background-color: #ccc;
+    margin-top:-20px;
+    height: 20%;
+    width:100%;
+}
+
+h4 {
+    padding-top:25px;
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#submit {
+    margin-top: 10px;
+}
+
+#video {
+    display: flex;
+    margin: auto;
+    overflow: auto;
+}
+
+
+section>h4 {
+    background-color: #ccc;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #FDD023;
+    border: transparent;
+    min-width: 50px;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: bold;
+}
+
+#email {
+    width:300px;
+    height:25px;
+    text-align:center;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #header,
+    #header-2,
+    #info {
+        grid-template-columns: 1fr;
+    }
+
+    .fa-fire,
+    .fa-truck,
+    .fa-battery-full {
+        display: none;
+    }
+}
+
